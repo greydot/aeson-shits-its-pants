@@ -3,9 +3,9 @@ module Main where
 import Data.Aeson.Decoding
 import Data.ByteString qualified as ByteString
 import Data.Map.Strict (Map)
-import Data.Text (Text)
+import Data.Text.Short (ShortText)
 
-type M = Map Text Text
+type M = Map ShortText ShortText
 
 main :: IO ()
 main = do file <- ByteString.readFile "file.json"
