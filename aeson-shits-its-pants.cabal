@@ -1,0 +1,27 @@
+cabal-version:      3.0
+name:               aeson-shits-its-pants
+version:            6.6.6
+synopsis:           Showcase of how aeson shits its pants
+-- description:
+license:            WTFPL
+license-file:       LICENSE
+author:             Lana Black
+maintainer:         lana@illuminati.industries
+-- copyright:
+category:           Testing
+build-type:         Simple
+
+common warnings
+    ghc-options: -Wall
+
+executable aeson-shits-its-pants
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base >=4.16 && < 5.0,
+                      aeson,
+                      bytestring,
+                      containers,
+                      text
+    hs-source-dirs:   src
+    default-language: GHC2021
+    ghc-options:      -O2
