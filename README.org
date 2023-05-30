@@ -7,7 +7,7 @@ This is a small showcase of how Haskell and the aeson library suffer from very
 unfunny case of being probably even worse than Java. And we all know how Java
 sucks :(
 
-The example here consists solely of parsing a ~14 megabyte randomly generated
+The example here consists solely of parsing a 14 megabyte randomly generated
 piece of JSON into Haskell's ~Data.Map~. One may expect the consumed memory amount
 to be on the order of data being processed. But if you run this code, the result may
 surprise you.
