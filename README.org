@@ -40,7 +40,7 @@ $ ./run.sh
         Exit status: 0
 #+end_src
 
-In effect, the ration of required memory to the size of processed data here is
+In effect, the ratio of required memory to the size of processed data here is
 40 (!!!) to 1.
 
 Granted, not all blame lies on aeson itself. Haskell is terribly inefficient when
